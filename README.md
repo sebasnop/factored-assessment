@@ -77,7 +77,7 @@ You can follow the installation instructions for your operating system on [Getti
 2. Clone this repository
 
    ```bash
-   git clone https://github.com/sebasnop/factored-assessment-fullstack.git
+   git clone --recurse-submodules https://github.com/sebasnop/factored-assessment.git
    ```
 
 3. Navigate to the Project Directory
