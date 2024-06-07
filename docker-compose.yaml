@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./factored-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./factored-backend:/app
+    environment:
+      - DATABASE_URL=sqlite:///./sql_app.db
+
+  frontend:
+    build:
+      context: ./factored-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./factored-frontend:/app
+    depends_on:
+      - backend

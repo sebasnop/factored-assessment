@@ -1,0 +1,6 @@
+[submodule "factored-frontend"]
+	path = factored-frontend
+	url = https://github.com/sebasnop/factored-frontend.git
+[submodule "factored-backend"]
+	path = factored-backend
+	url = https://github.com/sebasnop/factored-backend.git
